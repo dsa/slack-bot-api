@@ -34,7 +34,7 @@ Bot.prototype.login = function() {
         this.ims = data.ims;
         this.groups = data.groups;
 
-        this.emit('start');
+        this.emit('start', data);
 
         this.connect();
     }.bind(this));
